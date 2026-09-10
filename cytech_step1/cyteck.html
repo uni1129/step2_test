@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問合せ</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main></main>
+
+    <footer>
+      <img
+        src="img/toiawase.jpeg"
+        alt="テキスト画像"
+        width="120px"
+        height="40px"
+      />
+      <h3>以下の入力フォームよりお問合せを送信してください。</h3>
+      <h4>*お問合せ内容</h4>
+
+      <table border="2">
+        <tr>
+          <th>お問合せ内容</th>
+          <td><textarea cols="60" rows="5"></textarea></td>
+        </tr>
+
+        <tr>
+          <th>お問合せ種別<br />*複数選択可能</th>
+          <td>
+            <label><input type="checkbox" />資料請求</label>
+            <label><input type="checkbox" />お問合せ</label>
+            <label><input type="checkbox" />見積/提案依頼</label>
+            <label><input type="checkbox" />その他</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">サービスの導入状況</th>
+          <th>予定の有無</th>
+          <td>
+            <label><input type="radio" name="plan" />導入検討中</label>
+            <label><input type="radio" name="plan" />すでに利用中</label>
+            <label><input type="radio" name="plan" />情報収集のみ</label>
+            <label><input type="radio" name="plan" />その他</label>
+          </td>
+        </tr>
+        <tr>
+          <th>利用形態</th>
+          <td>
+            <label><input type="radio" name="plan" />自社利用</label>
+            <label><input type="radio" name="plan" />顧客利用</label>
+            <label><input type="radio" name="plan" />その他</label>
+          </td>
+        </tr>
+        <tr>
+          <th>会社名・部署名</th>
+          <td><input type="text" size="60" /></td>
+        </tr>
+        <tr>
+          <th>名前</th>
+          <td><input type="text" placeholder="漢字" size="60" /></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td><input type="text" placeholder="半角" size="60" /></td>
+        </tr>
+        <tr>
+          <th>電話番号</th>
+          <td><input type="text" placeholder="ハイフンなし" size="60" /></td>
+        </tr>
+      </table>
+
+      <button>入力確認画面へ</button>
+      <button>リセット</button>
+
+      <p>
+        *当社の個人情報の取扱いについては、<a href=""
+          >「当社での個人情報の取扱いについて」</a
+        >をご参照ください。
+      </p>
+    </footer>
+  </body>
+</html>
